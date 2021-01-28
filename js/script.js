@@ -166,7 +166,7 @@ async function getQuote() {
 }
 
 async function getWeather() {
-  const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${localStorage.getItem('userCity')}&appid=9513284f7eb04b592fe4dba8479cfc80&units=metric`
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${localStorage.getItem('userCity')}&appid=9513284f7eb04b592fe4dba8479cfc80&units=metric`
 
   const response = await fetch(weatherUrl)
   const data = await response.json()
