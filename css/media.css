@@ -1,0 +1,139 @@
+@media (max-width: 1366px) {
+  .time {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 1100px) {
+  .time {
+    font-size: 7rem;
+  }
+  .quote-section {
+    max-width: 500px;
+  }
+  .quote-text {
+    font-size: 1rem;
+  }
+  .date {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .what-focus {
+    font-size: 1.2rem;
+  }
+  .focus-wrapper {
+    margin: 0 auto;
+  }
+  .focus {
+    font-size: 1.2rem;
+  }
+  .quote-update {
+    width: 1.2rem;
+  }
+  .weather-info {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .change-bg {
+    max-width: 120px;
+  }
+  .date {
+    margin-top: -2rem;
+  }
+  .time {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .change-bg {
+    max-width: unset;
+    bottom: 10px;
+  }
+  .quote-section {
+    position: absolute;
+    bottom: 50px;
+    max-width: 600px;
+    padding: 0 10px;
+  }
+  .quote-wrapper {
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    transition: none;
+  }
+  .quote-author {
+    transform: translate3d(0, 0, 0);
+    transition: none;
+  }
+  .quote-wrapper:hover {
+    cursor: default;
+    transform: translate3d(0, 0, 0);
+  }
+  .quote-wrapper:hover .quote-author {
+    transform: translate3d(0, 0, 0);
+  }
+  .quote-text {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .date,
+  .focus,
+  .what-focus {
+    font-size: 1.1rem;
+  }
+  .quote-update {
+    width: 1.1rem;
+  }
+}
+@media (max-width: 640px) {
+  .quote-author,
+  .change-bg,
+  .weather-info {
+    font-size: 14px;
+  }
+  .city {
+    font-size: 1rem;
+    padding: 0 0 4px 0;
+  }
+}
+@media (max-width: 480px) {
+  .time {
+    font-size: 5.6rem;
+  }
+}
+@media (max-width: 375px) {
+  .weather-info span{
+    margin-top: 0.2rem;
+  }
+  .time {
+    font-size: 4.8rem;
+  }
+  .date{
+    margin-top: -3rem;
+  }
+  .date,
+  .focus,
+  .what-focus {
+    font-size: 1rem;
+  }
+  .focus{
+    padding: 3px 5px;
+  }
+  .quote-text{
+    font-size: 14px;
+  }
+  h1{
+    font-size: 1.1rem;
+  }
+  .change-bg{
+    right: 10px;
+  }
+  .weather-wrapper{
+    left: 10px;
+    right: 10px;
+  }
+}

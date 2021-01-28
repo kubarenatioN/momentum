@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  color: #fff;
+  background-color: #000;
+}
+
+.overlay-wrapper {
+  transition: background-color 1s;
+}
+
+.momentum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.date {
+  user-select: none;
+  font-size: 1.5rem;
+}
+.time {
+  position: relative;
+  user-select: none;
+  font-size: 12rem;
+  line-height: 1;
+}
+.hours,
+.seconds{
+  top: 0;
+  position: absolute;
+  left: 100%;
+}
+.hours{
+  right: 100%;
+  left: unset;
+}
+
+.name-wrapper{
+  display: inline;
+  /* pointer-events: none; */
+}
+.name{
+  min-width: 3rem;
+  display: inline-block;
+  outline: none;
+  padding: 5px 0;
+  position: relative;
+}
+
+.what-focus{
+  font-size: 1.5rem;
+}
+.focus-wrapper{
+  margin: 0.5rem auto 0;
+}
+.focus {
+  min-width: 10rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  outline: none;
+  padding: 5px 10px;
+}
+.name::after,
+.focus::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transform: translateX(-50%);
+  transition: .4s;
+  background-color: #fff;
+}
+.name.active::after,
+.focus.active::after{
+  width: 100%;
+}
+
+h1 {
+  user-select: none;
+  margin: 1rem 0;
+}
+h2{
+  font-weight: 400;
+}
+
+.change-bg{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background-color: transparent;
+  font: unset;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 15px;
+  outline: none;
+  transition: .2s;
+}
+.change-bg:hover{
+  background-color: #fff;
+  color: #000;
+}
+.change-bg:disabled:hover,
+.change-bg:disabled{
+  opacity: .5;
+  color: #fff;
+  background-color: transparent;
+}
+
+.quote-section{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.quote-wrapper{
+  overflow: hidden;
+  transform: translate3d(0, 1rem, 0);
+  transition-delay: .3s;
+  transition-duration: .3s;
+  transition-property: transform;
+}
+.quote{
+  display: flex;
+  justify-content: center;
+}
+.update-quote-btn:disabled{
+  opacity: 0.5;
+}
+.update-quote-btn{
+  border: none;
+  padding: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.quote-update{
+  width: 1.4rem;
+  display: block;
+}
+.quote-text{
+  font-size: 1.2rem;
+}
+.quote-author{
+  transform: translate3d(0, 1rem, 0);
+  transition-duration: .3s;
+}
+.quote-wrapper:hover{
+  transition-delay: 0s;
+  cursor: default;
+  transform: translate3d(0, 0, 0);
+}
+.quote-wrapper:hover .quote-author{
+  cursor: default;
+  transform: translate3d(0, 0, 0);
+  transition-delay: .5s;
+}
+
+.weather-wrapper{
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 40px;
+}
+.weather-info{
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.weather-info span{
+  margin-top: 0.5rem;
+}
+.weather-descr{
+  text-transform: capitalize;
+}
+.city{
+  font-size: 1.2rem;
+  text-align: right;
+  display: inline-block;
+  min-width: 4rem;
+  padding: 5px 0;
+  position: relative;
+  outline: none;
+}
+.city::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: .4s;
+  background-color: #fff;
+}
+.city.active::after{
+  width: 100%;
+}
