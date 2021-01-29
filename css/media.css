@@ -47,9 +47,16 @@
   }
 }
 @media (max-width: 768px) {
+  .name{
+    min-width: 2rem;
+  }
   .change-bg {
     max-width: unset;
     bottom: 10px;
+  }
+  .change-bg:hover{
+    background-color: transparent;
+    color: #fff;
   }
   .quote-section {
     position: absolute;
